@@ -1,108 +1,156 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Me</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: Arial, sans-serif;
-        }
-        body {
-            background-color: #f4f4f4;
-            text-align: center;
-        }
-        .navbar {
-            background-color: #182f48;
-            padding: 15px;
-            color: white;
-            font-size: 24px;
-            font-weight: bold;
-        }
-        .container {
-            margin: 20px auto;
-            padding: 20px;
-            max-width: 800px;
-            background: white;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        h2 {
-            color: #0c325a;
-            margin-bottom: 10px;
-        }
-        p {
-            font-size: 16px;
-            color: #333;
-            line-height: 1.5;
-        }
-        .btn {
-            padding: 10px 15px;
-            background-color: #122a44;
-            color: white;
-            border: none;
-            cursor: pointer;
-            font-size: 16px;
-            margin-top: 10px;
-            border-radius: 5px;
-            text-decoration: none;
-            display: inline-block;
-        }
-        .btn:hover {
-            background-color: #14375d;
-        }
-        ul {
-            list-style-type: none;
-            padding: 0;
-        }
-        li {
-            font-size: 16px;
-            margin: 5px 0;
-        }
-        .footer {
-            margin-top: 20px;
-            padding: 10px;
-            background-color: #0e2742;
-            color: white;
-            font-size: 14px;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About Me - Agrima Chaturvedi</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet"/>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+      color: #fff;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .navbar {
+      width: 100%;
+      padding: 20px;
+      background: rgba(0, 0, 0, 0.5);
+      backdrop-filter: blur(10px);
+      font-size: 28px;
+      font-weight: 600;
+      text-align: center;
+      color: #a78bfa;
+      letter-spacing: 1px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .container {
+      background-color: rgba(255, 255, 255, 0.07);
+      border-radius: 16px;
+      padding: 30px;
+      margin: 30px 20px;
+      width: 90%;
+      max-width: 700px;
+      backdrop-filter: blur(20px);
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+      transition: transform 0.3s ease;
+    }
+
+    .container:hover {
+      transform: translateY(-5px);
+    }
+
+    h2 {
+      color: #a78bfa;
+      margin-bottom: 15px;
+      font-size: 1.8rem;
+    }
+
+    p, li {
+      font-size: 1rem;
+      color: #f1f1f1;
+      line-height: 1.6;
+    }
+
+    ul {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    li::before {
+      content: "✅ ";
+      color: #8affc1;
+      margin-right: 5px;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 15px;
+      padding: 10px 20px;
+      background: #a78bfa;
+      color: #000;
+      font-weight: bold;
+      text-decoration: none;
+      border-radius: 8px;
+      transition: background 0.3s ease, transform 0.2s ease;
+    }
+
+    .btn:hover {
+      background: #c9a8ff;
+      transform: scale(1.05);
+    }
+
+    .footer {
+      width: 100%;
+      text-align: center;
+      background: rgba(0, 0, 0, 0.6);
+      padding: 20px;
+      color: #ccc;
+      font-size: 0.9rem;
+      margin-top: auto;
+    }
+
+    @media screen and (max-width: 600px) {
+      h2 {
+        font-size: 1.5rem;
+      }
+
+      p, li {
+        font-size: 0.95rem;
+      }
+
+      .container {
+        padding: 20px;
+      }
+    }
+  </style>
 </head>
 <body>
 
-    <div class="navbar">About Me</div>
+  <div class="navbar">🚀 About Me</div>
 
-    <div class="container">
-        <h2>👋 Hi, I'm Agrima Chaturvedi!</h2>
-        <p>I'm a passionate developer with experience in web development, machine learning, and Python programming.</p>
-    </div>
+  <div class="container">
+    <h2>👋 Hi, I'm Agrima Chaturvedi</h2>
+    <p>I'm a passionate developer exploring the worlds of web development, machine learning, and Python programming. I love creating meaningful tech projects that solve real-world problems.</p>
+  </div>
 
-    <div class="container">
-        <h2>💡 Skills & Technologies</h2>
-        <ul>
-            <li>✅ Python </li>
-            <li>✅ Machine Learning (Scikit-learn)</li>
-            <li>✅ Web Development (HTML, CSS)</li>
-            <li>✅ Database Management (MySQL)</li>
-        </ul>
-    </div>
+  <div class="container">
+    <h2>💡 Skills & Technologies</h2>
+    <ul>
+      <li>Python</li>
+      <li>Machine Learning (Scikit-learn)</li>
+      <li>Web Development (HTML, CSS)</li>
+      <li>Database Management (MySQL)</li>
+    </ul>
+  </div>
 
-    <div class="container">
-        <h2>🎓 Education</h2>
-        <p>Currently learning Machine Learning and working on projects related to Disease Prediction, Doctor Recommendation, and Credit Card Fraud Detection.</p>
-    </div>
+  <div class="container">
+    <h2>🎓 Education</h2>
+    <p>Currently learning Machine Learning and working on projects like Disease Prediction & Doctor Recommendation,Airline Reservation System(SkyWay)[Python-Flask] and Credit Card Fraud Detection. I'm always eager to learn new tools and technologies.</p>
+  </div>
 
-    <div class="container">
-        <h2>📞 +91 9685633729</h2>
-        <p>📧 Email: agrimachaturvedi6@gmail.com</p>
-    </div>
+  <div class="container">
+    <h2>📞 Contact Me</h2>
+    <p>Email: <a href="mailto:agrimachaturvedi6@gmail.com" class="btn">agrimachaturvedi6@gmail.com</a></p>
+  </div>
 
-    <div class="footer">
-        &copy; 2025 Agrima Chaturvedi | Designed by Me
-    </div>
+  <div class="footer">
+    &copy; 2025 Agrima Chaturvedi | Designed & Developed by Agrima
+  </div>
 
 </body>
 </html>

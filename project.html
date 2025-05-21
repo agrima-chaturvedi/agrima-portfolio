@@ -5,6 +5,119 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Project Details - Disease Prediction & Fraud Detection</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+            color: #fff;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .navbar {
+            width: 100%;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.5);
+            backdrop-filter: blur(10px);
+            font-size: 28px;
+            font-weight: 600;
+            text-align: center;
+            color: #a78bfa;
+            letter-spacing: 1px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .container {
+            background-color: rgba(255, 255, 255, 0.07);
+            border-radius: 16px;
+            padding: 30px;
+            margin: 30px 20px;
+            width: 90%;
+            max-width: 800px;
+            backdrop-filter: blur(20px);
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease;
+        }
+
+        .container:hover {
+            transform: translateY(-5px);
+        }
+
+        h2 {
+            color: #a78bfa;
+            margin-bottom: 15px;
+            font-size: 1.8rem;
+        }
+
+        p, li {
+            font-size: 1rem;
+            color: #f1f1f1;
+            line-height: 1.6;
+        }
+
+        ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        li::before {
+            content: "✅ ";
+            color: #8affc1;
+            margin-right: 5px;
+        }
+
+        .footer {
+            width: 100%;
+            text-align: center;
+            background: rgba(0, 0, 0, 0.6);
+            padding: 20px;
+            color: #ccc;
+            font-size: 0.9rem;
+            margin-top: auto;
+        }
+
+        .btn {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 10px 20px;
+            background: #a78bfa;
+            color: #000;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: background 0.3s ease, transform 0.2s ease;
+        }
+
+        .btn:hover {
+            background: #c9a8ff;
+            transform: scale(1.05);
+        }
+
+        @media screen and (max-width: 600px) {
+            h2 {
+                font-size: 1.5rem;
+            }
+
+            p, li {
+                font-size: 0.95rem;
+            }
+
+            .container {
+                padding: 20px;
+            }
+        }
+    </style>
 </head>
 <body>
 
@@ -12,7 +125,7 @@
 
     <div class="container">
         <h2>About the Project</h2>
-        <p>I have work on projects are Disease Prediction & Doctor Recommendation using Machine Learning and flask , Airline Reservation System using Python(Flask),Mysql connectivit and on Credit Card Fraud Detection using Machine Learning. The system helps users identify health conditions and detects fraudulent transactions in real time.</p>
+        <p>I've worked on projects such as Disease Prediction & Doctor Recommendation using Machine Learning and Flask, an Airline Reservation System with Python(Flask) and MySQL, and Credit Card Fraud Detection using Machine Learning. These systems aim to help users identify health conditions, recommend doctors, and detect fraudulent transactions in real time.</p>
     </div>
 
     <div class="container">
@@ -22,14 +135,18 @@
             <li>The system analyzes symptoms and suggests possible diseases.</li>
             <li>It recommends specialist doctors based on the predicted condition.</li>
             <li>Users can find contact details of doctors near their location.</li>
+            <a href="https://github.com/agrima-chaturvedi/SymptoCare" target="_blank" style="color:#a78bfa; text-decoration:none; font-weight:600;"
+                onmouseover="this.style.color='#6c5ce7'" onmouseout="this.style.color='#a78bfa'">
+                View SymptoCare on GitHub
         </ul>
         <h3>🧠 Machine Learning Algorithm Used:</h3>
         <ul>
             <li>🔹 Decision Tree Algorithm</li>
         </ul>
     </div>
+
     <div class="container">
-        <h2>✈️ Airline Reservation System : SkyWay</h2>
+        <h2>✈️ Airline Reservation System: SkyWay</h2>
         <p>This web-based system allows users to search and book flights with real-time data handling, ensuring a smooth travel booking experience. It also offers admin controls for managing flights and crew.</p>
     
         <h3>Key Functionalities:</h3>
@@ -38,7 +155,10 @@
             <li>🛫 Multi-passenger booking with PNR generation</li>
             <li>📅 View flight schedules and itinerary details</li>
             <li>❌ Flight and itinerary cancellation</li>
-            <li>💻Secure login/signup for personalized experience</li>
+            <li>💻 Secure login/signup for personalized experience</li>
+            <a href="https://github.com/agrima-chaturvedi/SkyWay" target="_blank" style="color:#a78bfa; text-decoration:none; font-weight:600;"
+                onmouseover="this.style.color='#6c5ce7'" onmouseout="this.style.color='#a78bfa'">
+                View SkyWay on GitHub
         </ul>
     
         <h3>💻 Technologies Used:</h3>
@@ -49,7 +169,6 @@
         </ul>
     </div>
     
-
     <div class="container">
         <h2>🔍 Credit Card Fraud Detection Model</h2>
         <p>The fraud detection model helps in identifying fraudulent transactions using machine learning algorithms.</p>
@@ -59,6 +178,10 @@
             <li>Collects transaction data including amount, location, time, and frequency.</li>
             <li>Applies Machine Learning Algorithms to detect unusual patterns.</li>
             <li>Flags suspicious transactions for further review.</li>
+            <a href="https://github.com/agrima-chaturvedi/credit" target="_blank" style="color:#a78bfa; text-decoration:none; font-weight:600;"
+                onmouseover="this.style.color='#6c5ce7'" onmouseout="this.style.color='#a78bfa'">
+                View Credit Card Fraud Detection on GitHub
+</a>
         </ul>
 
         <h3>🧠 Machine Learning Algorithm Used:</h3>
@@ -75,24 +198,22 @@
             <li>📌 Credit card fraud detection </li>
             <li>📌 Airline reservation system with secure login/signup for personalized experience</li>
             <li>📌 Database storage for user history in Airline reservation system</li>
+            
         </ul>
     </div>
-
 
     <div class="container">
         <h2>💻 Technologies Used</h2>
         <ul>
             <li>🔹 Machine Learning: Scikit-learn, TensorFlow</li>
             <li>🔹 Fraud Detection Dataset: Kaggle’s Credit Card Fraud Dataset</li>
-            <li>🔹 Airline Reservation system Dataset: Kaggle Airline Dataset </li>
-            <li>🔹Airline Reservation system: Python(Flask) for Backend ,Mysql connectivity,Frontend:Html,CSS </li>
+            <li>🔹 Airline Reservation system Dataset: Kaggle Airline Dataset</li>
+            <li>🔹 Airline Reservation System: Python(Flask) for Backend, MySQL connectivity, Frontend: HTML, CSS</li>
         </ul>
     </div>
-    
-    
 
     <div class="footer">
-        &copy; 2025 Disease Prediction , SkyWay and Credit Card Fraud Detection System | Designed by Agrima Chaturvedi
+        &copy; 2025 Disease Prediction, SkyWay, and Credit Card Fraud Detection System | Designed by Agrima Chaturvedi
     </div>
 
 </body>
